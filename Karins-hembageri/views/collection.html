@@ -1,1 +1,16 @@
-<h1>sortiment</h1>
+<h3 class="headline">{{ headline }}
+    <hr>
+</h3>
+<section class="text-center" id="collection">
+    <div ng-repeat="item in products" ng-class-even="'collection-bg-b'" ng-class-odd="'collection-bg-a'">
+        <div class="container collection">
+            <div class="collection-img">
+                <img ng-src="{{ item.image }}" alt="">
+            </div>
+            <div class="collection-text">
+                <h2>{{ item.title }}</h2>
+                <p>{{ item.text }}</p>
+            </div>
+        </div>
+    </div>
+</section>
