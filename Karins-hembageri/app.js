@@ -17,22 +17,22 @@ angular.module("bageriApp", ["ngRoute"])
     })
 
     .controller('homeController', function ($scope) {
-        $scope.logo = 'img/logo-header.png',
-        $scope.title = 'nybakat bröd',
-        $scope.text = 'Vi bakar för en hållbar framtid',
+        $scope.logo = 'img/logo-header.png';
+        $scope.title = 'nybakat bröd';
+        $scope.text = 'Vi bakar för en hållbar framtid';
         $scope.buttonText = 'sortiment';
     })
 
-    .controller('visionController', function($scope) {
-        $scope.headline = 'Vår vision',
-        $scope.title = '100% surdegsbröd gjort på kärlek och respekt för råvaran',
-        $scope.text = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut laboreet dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et earebum. Stet clita kasd gubergren.'
-        $scope.buttonText = 'sortiment',
-        $scope.imgLeft = 'img/wheat.png',
+    .controller('visionController', function ($scope) {
+        $scope.headline = 'Vår vision';
+        $scope.title = '100% surdegsbröd gjort på kärlek och respekt för råvaran';
+        $scope.text = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut laboreet dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et earebum. Stet clita kasd gubergren.';
+        $scope.buttonText = 'sortiment';
+        $scope.imgLeft = 'img/wheat.png';
         $scope.imgRight = 'img/sliced_bread.png';
     })
 
-    .controller('collectionController', function($scope) {
+    .controller('collectionController', function ($scope) {
         $scope.headline = 'Sortiment';
         $scope.products = [
             { image: 'img/surdegsbröd_s.png', title: 'En stor variation av surdegsbröd', text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.' },
